@@ -6,11 +6,11 @@ int main()
         printf("Please enter a number: ");
         int n;
         scanf("%d", &n);
-        printf("\nSo take a look at me now!\n");
+        printf("So take a look at me now! ");
         if (n % 2 == 0) {
-            printf("%d\n", n);
+            printf("%d\n\n", n);
         } else {
-            printf("%d\n", n + 1);
+            printf("%d\n\n", n + 1);
        }
     }
 }
