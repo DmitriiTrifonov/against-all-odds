@@ -1,16 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() 
 {
-    while(1) {
+    char num[100];
+    while (1) {
+        int n ;
         printf("Please enter a number: ");
-        int n;
-        scanf("%d", &n);
-        printf("So take a look at me now! ");
-        if (n % 2 == 0) {
-            printf("%d\n\n", n);
-        } else {
-            printf("%d\n\n", n + 1);
-       }
+        fgets(num, 100, stdin);
+        n = atoi(num);
+        printf("So take a look at me now!: ");
+        printf("%d\n\n", n + (n & 1));
     }
 }
